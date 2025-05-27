@@ -50,12 +50,22 @@ const Bookshelf = () => {
           <form onSubmit={handleSubmit}>
             <label>
               Title: <br />
-              <input name="title" type="text" onChange={handleInputChange} />
+              <input
+                name="title"
+                type="text"
+                value={newBook.title}
+                onChange={handleInputChange}
+              />
             </label>
             <br />
             <label>
               Author: <br />
-              <input name="author" type="text" onChange={handleInputChange} />
+              <input
+                name="author"
+                type="text"
+                value={newBook.author}
+                onChange={handleInputChange}
+              />
             </label>
             <br />
             <button>Add Book</button>
